@@ -21,9 +21,12 @@ RSpec.describe Round do
 
         expect(round).to be_instance_of(Round)
     end
+    
     it "is the current card" do
 
         expect(round.current_card).to eq(card_1)
+        
+        binding.pry
         
     end
 
