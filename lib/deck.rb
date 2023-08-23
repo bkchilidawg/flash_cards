@@ -8,6 +8,7 @@ class Deck
     def cards_in_category(category_filter)
         @category_deck = @cards.select { |card| card.category == category_filter }
     end
+    
 
 
 end

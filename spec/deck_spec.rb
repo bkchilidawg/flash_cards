@@ -24,10 +24,20 @@ RSpec.describe Deck do
 
         expect(deck.count).to be 3
     end
-      it 'has cards with a specific category' do
+    it 'has cards with a specific category' do
         deck = Deck.new(cards)
 
         expect(deck.cards_in_category(:STEM)).to eq([card_2,card_3])
+    end
+    it 'has cards with a specific category' do
+        deck = Deck.new(cards)
+
+        expect(deck.cards_in_category(:Geography)).to eq([card_1])
+    end
+    it 'has cards with a specific category' do
+        deck = Deck.new(cards)
+
+        expect(deck.cards_in_category("Pop Culture")).to eq([])
     end
 end
 
